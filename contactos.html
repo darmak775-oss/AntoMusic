@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="Estilo_Contactos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+    <header style="position: relative;">
+    <h1>ANTO</h1>
+    <h2>Accesorios Musicales</h2>
+    <!----menu despegable-->
+    <nav class="navbar">
+        <input type="checkbox" id="menu">
+        <label for="menu" class="btn-menu">&#9776;</label>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">INICIO</a></li>
+            <li class="despegable">
+                <a href="#">INSTRUMENTOS</a>
+                <ul class="menu-desplegable">
+                    <li><a href="trompeta.html">TROMPETA</a></li>
+                    <li><a href="trombon.html">TROMBON</a></li>
+                    <li><a href="baritono.html">BARITONO</a></li>
+                    <li><a href="clarinete.html">CLARINETE</a></li>
+                </ul>
+            </li>
+            <li><a href="contactos.html">CONTACTOS</a></li>
+            <li><a href="Nosotros.html">NOSOTROS</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!--------CONTACTO -------->
+
+    <section class="contact" id="contacto">
+
+        <div class="contact-info">
+
+            <p class="subtitle">
+                CONTACTANOS
+            </p>
+            <h2>
+            ¿Tienes un proyecto en mente?
+            </h2>
+            <p>
+            Cuentanos que necesitas y te ayudaremos
+            a crear el accesorio perfecto para tu instrumento.
+            </p><br>
+
+            <div class="contact-data">
+                <p>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    +591 63401571
+                </p>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    La Paz, Bolivia
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    darmak775@gmail.com
+                </p>
+            </div>
+        </div>
+        <form id="contactForm">
+            <input type="text" id="nombre" placeholder="Tu nombre" required >
+            <input type="tel" id="telefono" placeholder="Tu numero de telefono" required>
+            <textarea id="mensaje" rows="6" placeholder="Cuentanos que necesitas..." required></textarea>
+            <button type="submit" class="btn">Enviar mensaje</button>
+            <p id="respuesta"></p>
+        </form>
+            
+    </section>
+
+<!--------- FOOTER------->
+
+    <footer>
+
+        <div class="footer-logo">
+            AntoMusic
+        </div>
+        <p>
+            Accesorios musicales personalizados.
+        </p>
+        <div class="social">
+            <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+            <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+        <p class="copyright">
+            © 2026 Instituto Tecnologico Don Bosco
+        </p>
+    </footer>
+
+    <a class="whatsapp" href="https://wa.me/+59163401571"
+        target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+<script src="formulario.js"></script>
+</body>
+</html>
